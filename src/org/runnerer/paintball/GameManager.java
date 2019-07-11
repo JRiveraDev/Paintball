@@ -224,7 +224,7 @@ public class GameManager implements Listener
             board.add("www.runnererswork.com", i--);
         } else
         {
-            board.setTitle(getGame().getName());
+            board.setTitle(C.Green + C.Bold + getGame().getName());
             getGame().runScoreboard();
         }
 

@@ -107,9 +107,6 @@ public class PaintballGame extends Game
     @EventHandler
     public void paintEffect(ProjectileHitEvent event)
     {
-        if (event.getEntity() instanceof ThrownPotion)
-            return;
-
         double random = Math.random() * 2 + 1;
 
         byte color = 0;

@@ -73,7 +73,7 @@ public class PaintballGame extends Game
         {
             Player player = (Player) event.getEntity();
 
-            if (player.getHealth() - event.getDamage() >= 0)
+            if (player.getHealth() - event.getDamage() <= 0)
             {
                 event.setCancelled(true);
                 player.setHealth(20);

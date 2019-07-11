@@ -150,6 +150,7 @@ public abstract class Game
 
                     player.teleport(GameManager.instance.getLobbySpawn());
                     setState(GameState.WAITING);
+                    MapHelper.mapRollback(getMap())
                 }
             }, 200L);
         }
